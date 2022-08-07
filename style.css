@@ -90,8 +90,14 @@ h5, .h5 {
 .bg-grey {
     background-color : #333541
 }
-.bg-dark-blue {
+.bg-black {
     background-color: #1b1d27;
+}
+.bg-dark-blue {
+    background-color: #282e53;
+}
+.bg-black-transparent {
+    background-color: #00000047;
 }
 .p-t-5 {
     padding-top: 5px;
@@ -423,6 +429,43 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.container-services-down {
+    padding: 60px 240px 0;
+}
+.container-services-special {
+    padding: 40px 50px;
+    position: relative;
+}
+.container-services-special-icon {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    display: inline-block;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#64dc98+31,c0e989+100 */
+    background: #64dc98; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #64dc98 31%, #c0e989 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #64dc98 31%,#c0e989 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #64dc98 31%,#c0e989 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64dc98', endColorstr='#c0e989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border-radius: 100%;
+}
+.container-services-special-icon img {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+.container-services-special-text {
+    display: inline-block;
+    margin-left: 175px;
+}
+.container-services-special-text h6 {
+    font-size: 27px;
+    line-height: 39px;
+}
 /*other-services*/
 .other-services {
     background-image: url("img/bg-other-services.jpg");
@@ -583,6 +626,9 @@ ul {
     font-weight: 600;
     border-radius: 10px;
 }
+.request-quote-btn.fix-width {
+    width: 290px;
+}
 .request-quote-btn img {
     margin-right: 15px;
 }
@@ -628,7 +674,139 @@ ul {
 .footer-socket p, .footer-socket p a {
     color: #c1c1c1;
 }
-
+/*service-single-page*/
+.service-intro-inner {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.breadcrumb, .breadcrumb a {
+    color: #36a1d6;
+}
+.service-main-desc-left p {
+    margin-bottom: 20px;
+}
+.service-main-desc-left p:last-child {
+    margin-bottom: 0;
+}
+.service-main-desc-left ul {
+    padding-left: 15px;
+    margin-bottom: 20px
+}
+.service-main-desc-left ul li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.service-main-desc-left ul li:before {
+    font-family: FontAwesome;
+    content: '\f138 ';
+    color: #36c6b0;
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+}
+/*.service-main-desc-left ul li:after {*/
+/*    font-family: FontAwesome;*/
+/*    content: '\f105';*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 10px;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+.service-sub-desc-box {
+    margin-bottom: 80px;
+}
+.service-sub-desc-box:last-child {
+    margin-bottom: 0;
+}
+.service-sub-desc-box img {
+    float: left;
+}
+.service-sub-desc-box:nth-child(2n) img {
+    float: right;
+}
+.service-sub-desc-content {
+    display: inline-block;
+    width: 640px;
+    padding: 0 40px;
+}
+.service-sub-desc-box:nth-child(2n) .service-sub-desc-content {
+    padding-left: 0;
+}
+.service-sub-desc-content h6 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #353535;
+    margin-bottom: 20px
+}
+.service-sub-desc-content p {
+    margin-bottom: 20px;
+}
+.service-sub-desc-content p:last-child {
+    margin-bottom: 0px;
+}
+.talk-to-expert-content {
+    padding: 0 200px;
+}
+.talk-to-expert-content p {
+    font-size: 18px;
+}
+.service-box {
+    display: inline-block;
+    width: 350px;
+    margin-right: 30px;
+}
+/*about-us-page*/
+.subsidiary-logo-container {
+    box-shadow: 0 0 65px 1px #0000001f;
+    border-radius: 100%;
+    width: 340px;
+    height: 340px;
+    position: relative;
+}
+.subsidiary-logo-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.subsidiary-bold-text {
+    font-size: 17px;
+    font-weight: 600;
+}
+.visit-ceyline {
+    padding: 12px 45px;
+    background-color: #36a1d6;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.visit-ceyline:hover {
+    color: #fff!important;
+}
+.vision-mission .other-service-box {
+    box-shadow: 0 0 13px 1px #0000001f;
+    padding: 30px 50px 40px;
+    height: initial;
+}
+/*gallery-page*/
+.gallery-filter-btn {
+    padding: 10px 15px;
+    background-color: #3fa5d7!important;
+    color: #fff!important;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+.gallery-filter-btn.active {
+    background-color: #000!important;
+}
+button:focus {
+    outline: none;
+}
 
 
 

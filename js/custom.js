@@ -12,17 +12,25 @@
             $('.schedule-tabs .schedule-tab').removeClass('active');
             $(this).addClass('active');
         });
-        $('.testimonial-slider').owlCarousel({
+
+        //related-services-carousel
+        $('.related-services-carousel').owlCarousel({
             loop: true,
             margin: 0,
             nav: true,
             autoplay: true,
             autoplayHoverPause: true,
-            navText: '',
+            navText: ['Prev','Next'],
             controls: true,
             responsive: {
                 0: {
                     items: 1
+                },
+                1000: {
+                    items: 3
+                },
+                2000: {
+                    items: 3
                 }
             }
         });
@@ -46,6 +54,23 @@
             nextText: '<i class="fa fa-angle-right"></i>',
             prevText: '<i class="fa fa-angle-left"></i>'
         });
+
+        //gallery
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+        });
+
+        $('.gallery-filter-btn-container .gallery-filter-btn').on("click", function () {
+            var value = $(this).attr('data-name');
+
+            $grid.isotope({
+                filter: value
+            });
+
+            $('.gallery-filter-btn-container .gallery-filter-btn').removeClass('active');
+            $(this).addClass('active');
+        })
 
     });
 })(jQuery);
