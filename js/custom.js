@@ -72,5 +72,12 @@
             $(this).addClass('active');
         })
 
+        // fruits item see more
+        $(".fruit-learn-more a").on("click", function (e) {
+            e.preventDefault();
+            $('.fruit-more-details').slideDown(800);
+            $('.fruit-learn-more').hide();
+        });
+
     });
 })(jQuery);
